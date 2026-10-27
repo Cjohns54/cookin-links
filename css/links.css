@@ -212,6 +212,51 @@ body {
   border: 1px solid rgba(95, 212, 255, 0.25);
 }
 
+.offer-icon { color: #ffffff; }
+.offer-icon svg { width: 24px; height: 24px; }
+
+/* ---------- Stat tags ---------- */
+.stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #ffffff;
+}
+.stat svg { width: 15px; height: 15px; flex: none; }
+.stat span { display: inline-flex; align-items: center; gap: 5px; }
+
+/* Instagram-style notification bubble */
+.stat--ig {
+  background: linear-gradient(90deg, #ff2d6f, #e1306c 35%, #c13584 65%, #833ab4);
+  box-shadow: 0 6px 20px rgba(225, 48, 108, 0.35);
+  position: relative;
+}
+.stat--ig::after {
+  content: "";
+  position: absolute;
+  left: 22px; bottom: -5px;
+  width: 10px; height: 10px;
+  background: #ff2d6f;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+/* Revenue tag */
+.stat--mrr {
+  gap: 7px;
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(74, 222, 128, 0.4);
+  box-shadow: 0 0 18px rgba(74, 222, 128, 0.18);
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.02em;
+}
+
 .cta {
   display: flex;
   justify-content: center;

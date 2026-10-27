@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--
+  To change the theme, change the class on the html tag below to one of:
+  - theme-auto: Automatically switches based on user's system preferences
+  - theme-light: Forces light theme
+  - theme-dark: Forces dark theme
+-->
+
+<html class="theme-auto" lang="en"> <!-- Update `class="theme-auto"` with your preference -->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
+    <title>Connor | cookin.code</title>
+    <link rel="icon" type="image/png" href="images/avatar.svg"> <!-- Update this with your own favicon -->
+
+    <!-- Meta Description - Write a description (150-160 characters recommended) -->
+    <meta name="description" content="Connor from cookin.code. Learn how I make my videos and join the waitlist.">
+
+    <!-- Canonical URL - Helps prevent duplicate content issues -->
+
+    <!-- Author Information -->
+    <meta name="author" content="Connor Johnson">
+
+    <!-- Browser UI Color - Matches the default light/dark theme backgrounds -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+    <!-- Social Sharing (Open Graph & Twitter) - Uncomment and fill in to control how your page
+         looks when shared on social platforms and in chat apps.
+         og:url and og:image must be full absolute URLs. -->
+    <!--
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Connor Johnson">
+    <meta property="og:description" content="A short description of your page.">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/images/avatar@2x.png">
+    <meta name="twitter:card" content="summary">
+    -->
+
+    <!-- Font Preloads - Lets the browser fetch fonts in parallel with the stylesheets -->
+    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/brands.css">
+
+    <!-- LittleLink Extended Stylesheet (Optional) -->
+    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
+    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
+         Remove comments if you've added LittleLink Extended dependencies -->
+
+  </head>
+
+<body>
+
+    <div class="container">
+        <div class="column">
+          <main>
+
+            <img class="avatar avatar--rounded" src="images/avatar.svg" alt="Connor" width="128" height="128" fetchpriority="high">
+
+            <h1>Connor</h1>
+            <p>I make animated coding videos. Want to learn how?</p>
+
+            <nav class="button-stack" aria-label="Links">
+
+              <!-- Waitlist (Google Form) -->
+              <a class="button button-default" href="https://forms.gle/NW2ybdv6MHg2rpNN6" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="">Join the waitlist: learn to make videos like mine</a>
+
+              <!-- Instagram -->
+              <a class="button button-instagram" href="https://www.instagram.com/cookin.code/" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="">Instagram</a>
+
+              <!-- Add more buttons here. Copy one of the lines above and change the href, icon and label.
+                   Icons live in images/icons (youtube.svg, tiktok.svg, generic-website.svg, etc.) -->
+
+            </nav>
+          </main>
+
+      <footer>
+        Built with <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

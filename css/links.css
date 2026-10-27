@@ -149,7 +149,94 @@ body {
   outline: none;
 }
 
+/* ---------- Offer cards ---------- */
+.offers { display: flex; flex-direction: column; gap: 18px; text-align: left; }
+
+.offer {
+  position: relative;
+  padding: 22px 20px 20px;
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(22, 34, 68, 0.78), rgba(10, 16, 34, 0.82));
+  border: 1px solid rgba(110, 160, 255, 0.22);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+.offer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 20px; right: 20px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  opacity: 0.7;
+}
+
+.offer-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.offer-emoji {
+  flex: none;
+  min-width: 44px; height: 44px;
+  padding: 0 8px;
+  display: grid; place-items: center;
+  font-size: 1.35rem;
+  border-radius: 12px;
+  background: rgba(59, 139, 255, 0.14);
+  border: 1px solid rgba(95, 212, 255, 0.25);
+}
+.offer h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+}
+.offer p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.tags li {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: var(--cyan);
+  background: rgba(95, 212, 255, 0.08);
+  border: 1px solid rgba(95, 212, 255, 0.25);
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 14px 20px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0b1226;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.cta span { transition: transform .18s ease; }
+.cta:hover,
+.cta:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 2px var(--cyan), 0 10px 30px rgba(59, 139, 255, 0.45);
+  outline: none;
+}
+.cta:hover span { transform: translateX(3px); }
+
 @media (prefers-reduced-motion: reduce) {
   .cursor { animation: none; }
-  .link, .socials a { transition: none; }
+  .link, .cta, .cta span, .socials a { transition: none; }
 }
